@@ -1,11 +1,23 @@
 {
   "name": "tjreader",
   "version": "0.1.0",
-  "description": "an encouragement for my spirit",
+  "description": "an encouragement of my spirit",
   "main": "main.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "TJhaitang",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TJhaitang/TjReader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TJhaitang/TjReader/issues"
+  },
+  "homepage": "https://github.com/TJhaitang/TjReader#readme",
+  "devDependencies": {
+    "electron": "^24.0.0"
+  }
 }
