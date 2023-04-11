@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    Title: <input id="title"/>
+    <button id="btn" type="button">Set</button>
+    <script >
+        const setButton = document.getElementById('btn')
+        const titleInput = document.getElementById('title')
+        setButton.addEventListener('click', () => {
+            const title = titleInput.value
+            console.log(title)
+            window.electronAPI.setTitle(title)
+        });</script>
+  </body>
+</html>
